@@ -35,7 +35,7 @@ color: #969fa4;
 border-color: #507cc0;
 }
 .form-control, .btn {        
-border-radius: 3px;
+border-radius: 3px; 
 }
 .form-group{
   display: flex;
