@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import "bootstrap/dist/css/bootstrap.css"
+import { useHistory } from 'react-router-dom';
 const History = () => {
+  const hist = useHistory();
   const [mails, setMails] = useState([]);
 
   useEffect(() => {
@@ -17,7 +19,7 @@ const History = () => {
     const data = await res.json();
     console.log(data.history);
     setMails(data.history);
-    history.push("/history");
+    hist.push("/history");
   };
   return (
     <div className='outer m-5 w-80'>
