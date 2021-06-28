@@ -34,6 +34,7 @@ const Create = ()=>{
           window.alert(error);
           throw error;
         }
+        history.push("/running");
     }catch(err){
         console.log(err);
         history.push("/");

@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { useHistory } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.css"
 
 const Running = ()=>{
+  const history = useHistory();
   const [mails,setMails] = useState({});
   const getData = async () => {
     const res = await fetch('/running', {
@@ -15,6 +17,7 @@ const Running = ()=>{
     const mailData = data.currentRequest[0];
    // console.log('Data ====>>>>',mailData);
     setMails(mailData);
+    history.push("/running");
   };
   const terminate= async (e)=>{
     e.preventDefault();
