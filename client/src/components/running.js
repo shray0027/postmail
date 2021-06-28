@@ -29,6 +29,7 @@ const Running = ()=>{
       
     });
    const data = await res.json();
+   history.push("/running");
   }
   useEffect(() => {
     getData();

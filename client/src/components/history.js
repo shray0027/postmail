@@ -17,6 +17,7 @@ const History = () => {
     const data = await res.json();
     console.log(data.history);
     setMails(data.history);
+    history.push("/history");
   };
   return (
     <div className='outer m-5 w-80'>
