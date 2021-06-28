@@ -18,4 +18,6 @@ It is a mail posting web app inspired by mailchimp and build for flipr hackathon
 * It uses node-schedule library to schedule emails
 * It uses node-mailer for sending emails
 
+---
+you can see undeployed version at this [link](https://github.com/shray0027/fliprHackaton9.0)
 
